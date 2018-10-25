@@ -172,6 +172,16 @@ function getPremiumEmails(){
 // PART 4
 
 // Add function to assign interns to workdays
+const interns = ['Jerrold', 'Murphy', 'gitignore', 'python']
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
+'Saturday'
+]
+function makeSchedule(internArray){
 
+	for (let j=0; j < days.length; j++){
+		let i = Math.floor(Math.random() * Math.floor(internArray.length));
+		console.log(`${days[j]}: ${internArray[i]}`);
+	}
+}
 // Add a function to generate customer support hours
 
